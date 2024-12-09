@@ -1,0 +1,216 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>THE8</title>
+
+    <style>
+        header {
+            background: url(img/svt.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+
+        blockquote.text-amber {
+        border-left: 5px solid #ffab00;
+        }
+
+        blockquote.text-black {
+        border-left: 5px solid black;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .row .col {
+            margin-bottom: 20px;
+        }
+
+        .tabs .indicator{
+            background-color:  black;
+        }
+
+        .tabs .tab a:focus, .tabs .tab .a:focus.a:focus.active {
+            background: transparent;
+        }
+
+        .led-text {
+            min-width: 100%;
+            font-style: italic;
+            font-size: 20px;
+            animation: scroll-left 15s linear infinite, led-blink 4s step-start infinite, colorChange 2s infinite;
+        }
+
+        @keyframes led-blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes colorChange {
+            0% { color: rgb(255, 55, 149); }
+            50% { color: rgb(255, 97, 34); }
+            100% { color: rgb(248, 23, 68); }
+        }
+
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 20px;
+            }
+
+            .led-text {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="grey darken-4">
+
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="index.html" class="brand-logo">
+                    <div><img src="img/the8.png" alt="logo" style="height: 100%; max-height: 90px;"></div>
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons red-text text-accent-3">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="svt.html" class="red-text text-accent-3">SVT</a></li>
+                    <li><a href="gallery.html" class="red-text text-accent-3">Gallery</a></li>
+                    <li><a href="videos.html" class="red-text text-accent-3">Videos</a></li>
+                    <li><a href="music.html" class="red-text text-accent-3">Music</a></li>
+                    <li><a href="#the8's" class="red-text text-accent-3">∞</a></li>
+                    <li><a href="#best" class="red-text text-accent-3">Best</a></li>
+                </ul>
+                <ul class="sidenav red accent-3" id="mobile-menu">
+                    <li><a href="svt.html">SVT</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="#the8's">∞</a></li>
+                    <li><a href="#best">Best</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <div class="center amber accent-4" style="padding: 50px;">
+            <iframe class="hoverable center" style="border-radius:30px" src="https://open.spotify.com/embed/artist/7nqOGRxlXj7N2JYbgNEjYH?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+    <div class="container scrollspy" id="best">
+        <h2 class="red-text text-accent-3" style="font-weight: 900;">BEST MUSIC</h2>
+        <div class="row">
+            <div class="col s12 l6">
+                <iframe class="hoverable" style="border-radius:30px" src="https://open.spotify.com/embed/album/2Jrp37x38qZqtyrIrfxN4H?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="col s12 l6">
+                <iframe class="hoverable" style="border-radius:30px" src="https://open.spotify.com/embed/album/1rE0Gy69MFUh4GuXafWd0f?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="col s12 l6">
+                <iframe class="hoverable" style="border-radius: 30px;" src="https://open.spotify.com/embed/album/15pRJdCJtDyzQaY9tGs750?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="col s12 l6">
+                <iframe class="hoverable" style="border-radius:30px" src="https://open.spotify.com/embed/album/4lfFgz2rD1irxf7dZhNJht?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6 grey darken-4" style="border-radius: 30px; padding-bottom: 20px;">
+                <blockquote class="text-amber"><h2 class="amber-text darken-4" style="font-weight: 800;">My Picks</h2></blockquote>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/god-of-light-music/1721236858?i=1721236861"></iframe>
+
+                <br><br>
+
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/holiday/1539735672?i=1539735986"></iframe>
+
+                <br><br>
+
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/kidult/1551735824?i=1551735997"></iframe>
+
+                <br><br>
+
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/our-dawn-is-hotter-than-day/1539735672?i=1539736424"></iframe>
+
+            </div>
+            <div class="col s12 l6 red accent-3 scrollspy" style="border-radius: 30px; padding-bottom: 60px;" id="the8's">
+                <blockquote class="text-black"><h2 class="black-text darken-4" style="font-weight: 800;">The8's</h2></blockquote>
+                <iframe class="hoverable" style="border-radius:30px" src="https://open.spotify.com/embed/album/1amtBT25YbJ6B6hEy5cUJT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                <br><br>
+
+                <iframe class="hoverable" style="border-radius:30px" src="https://open.spotify.com/embed/album/2icreg0F2hBSb6JGpTeOYA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, impedit earum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, impedit earum!</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/seventeennews" class="red-text text-accent-2">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/saythename_17/following/" class="red-text text-accent-2">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@seventeen17_official?lang=en" class="red-text text-accent-2">Tiktok</a></li>
+                        <li><a href="https://www.youtube.com/@pledis17" class="red-text text-accent-2">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright red accent-3">
+            <div class="container center-align">&copy; 2024 THE8</div>
+        </div>
+    </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.materialboxed').materialbox();
+                $('.parallax').parallax();
+                $('.tabs').tabs();
+                $('.datepicker').datepicker({
+                    disableWeekends: true
+                });
+                $('.tooltipped').tooltip();
+                $('.scrollspy').scrollSpy();
+                $('.carousel').carousel();
+            });
+        </script>
+</body>
+</html>

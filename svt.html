@@ -1,0 +1,404 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>THE8</title>
+
+    <style>
+        .carousel {
+            height: 500px;
+    }
+
+        .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .row .col {
+            margin-bottom: 20px;
+        }
+
+        .tabs .indicator{
+            background-color:  black;
+        }
+
+        .tabs .tab a:focus, .tabs .tab .a:focus.a:focus.active {
+            background: transparent;
+        }
+
+        .led-text {
+            min-width: 100%;
+            font-style: italic;
+            font-size: 20px;
+            animation: scroll-left 15s linear infinite, led-blink 4s step-start infinite, colorChange 2s infinite;
+        }
+
+        @keyframes led-blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes colorChange {
+            0% { color: rgb(255, 55, 149); }
+            50% { color: rgb(255, 97, 34); }
+            100% { color: rgb(248, 23, 68); }
+        }
+
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 20px;
+            }
+
+            .led-text {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="grey darken-4">
+
+        <nav class="nav-wrapper black">
+            <div class="container">
+                <a href="index.html" class="brand-logo">
+                    <div><img src="img/the8.png" alt="logo" style="height: 100%; max-height: 90px;"></div>
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons red-text text-accent-3">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="svt.html" class="red-text text-accent-3">SVT</a></li>
+                    <li><a href="gallery.html" class="red-text text-accent-3">Gallery</a></li>
+                    <li><a href="music.html" class="red-text text-accent-3">Music</a></li>
+                    <li><a href="#the8's" class="red-text text-accent-3">∞</a></li>
+                    <li><a href="#members" class="red-text text-accent-3">Members</a></li>
+                    <li><a href="#ot13" class="red-text text-accent-3">OT13</a></li>
+                </ul>
+                <ul class="sidenav red accent-3" id="mobile-menu">
+                    <li><a href="#">SVT</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="#the8's">∞</a></li>
+                    <li><a href="#members">Members</a></li>
+                    <li><a href="#ot13">OT13</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="video-container">
+            <video autoplay>
+                <source src="img/mama.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+
+    <section class="grey darken-4 scrollspy" style="padding-top: 20px;" id="members">
+    <div class="container">
+        <h2 class="center-align red-text text-accent-3" style="font-weight: 900;">SAY THE NAME</h2>
+        <div class="row">
+            <!-- S.Coups Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/scoups.jpg" alt="S.Coups">
+                        <a href="https://www.instagram.com/sound_of_coups/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title red-text accent-3">S.Coups</span>
+                        <p>The leader of Seventeen. He is the daddu of the group.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jeonghan Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/jeonghan.jpg" alt="Jeonghan">
+                        <a href="https://www.instagram.com/jeonghaniyoo_n/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content black">
+                        <span class="card-title red-text accent-3">Jeonghan</span>
+                        <p class="white-text">Lead Vocalist, Visual. Also the eomma of the group.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Joshua Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/joshua.jpg" alt="Joshua">
+                        <a href="https://www.instagram.com/joshu_acoustic/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title red-text accent-3">Joshua</span>
+                        <p>Lead Vocalist, Visual. The uncle of the group.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jun Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/jun.jpg" alt="Jun">
+                        <a href="https://www.instagram.com/junhui_moon/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content black">
+                        <span class="card-title red-text text-accent-3">Jun</span>
+                        <p class="white-text">Lead Dancer. He is currently pursuing acting right now.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hoshi Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/hoshi.jpg" alt="hoshi">
+                        <a href="https://www.instagram.com/ho5hi_kwon/" class="btn-floating halfway-fab red accent-3 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content black">
+                        <span class="card-title red-text text-accent-4">Hoshi</span>
+                        <p class="white-text">The main dancer and leader of performance team. Tiger</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wonwoo Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/wonwoo.jpg" alt="hoshi">
+                        <a href="https://www.instagram.com/everyone_woo/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title red-text text-accent-4">Wonwoo</span>
+                        <p>He is the visual! Main Rapper of SVT. Black Cat</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Woozi Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/woozi.jpg" alt="Woozi">
+                        <a href="https://www.instagram.com/woozi_universefactory/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content black">
+                        <span class="card-title red-text">Woozi</span>
+                        <p class="white-text">He produces & writes some of the famous SVT songs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DK Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/dk.jpg" alt="DK">
+                        <a href="https://www.instagram.com/dk_is_dokyeom/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title red-text text-accent-4">DK</span>
+                        <p>DK is the main singer of SVT.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mingyu Card -->
+            <div class="col s6 l3 offset-l2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/mingyu.jpg" alt="Mingyu">
+                        <a href="https://www.instagram.com/min9yu_k/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content black">
+                        <span class="card-title red-text text-accent-4">Mingyu</span>
+                        <p class="white-text">He is the big puppy of the SVT. Big baby indeed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The8 Card -->
+            <div class="col s6 l3 scrollspy" id="the8's">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/bbq.jpg" alt="The8">
+                        <a href="https://www.instagram.com/xuminghao_o/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title red-text text-accent-3">The8</span>
+                        <p>He loves tutting and Acrobatics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seungkwan Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/seungkwan.jpg" alt="Seungkwan">
+                        <a href="https://www.instagram.com/pledis_boos/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content black">
+                        <span class="card-title red-text accent-4">Seungkwan</span>
+                        <p class="white-text">The human tangerine of the group. Main singer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vernon Card -->
+            <div class="col s6 l3 offset-l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/vernon.jpg" alt="Vernon">
+                        <a href="https://www.instagram.com/vernonline/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title red-text text-accent-4">Vernon</span>
+                        <p>Yes nonver. Yes he is Vernon, just vernoning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dino Card -->
+            <div class="col s6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/dino.jpg" alt="Dino">
+                        <a href="https://www.instagram.com/feat.dino/" class="btn-floating halfway-fab red accent-4 pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content black">
+                        <span class="card-title red-text text-accent-4">Dino</span>
+                        <p class="white-text">The maknae. The future of kpop.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="container scrollspy" id="ot13">
+        <blockquote><h2 class="red-text text-accent-3">SEVENTEEN</h2></blockquote>
+        <p>SEVENTEEN (세븐틴) is a 13-member South Korean self-producing boy group under Pledis Entertainment, a subsidiary of HYBE Labels. The group consists of S.Coups, Jeonghan, Joshua, Jun, Hoshi, Wonwoo, Woozi, DK, Mingyu, The8, Seungkwan, Vernon, and Dino. They debuted on May 26, 2015, with their first mini album, 17 CARAT.</p>
+        <p>Originally, the group was formed with seventeen members, however, four left prior to debut. The name now holds the meaning of the combination of thirteen members, three sub-unit teams, and one team. The members also debuted at the average age of seventeen.</p>
+        <div class="row">
+            <div class="carousel" style="size: 500px;">
+                <a class="carousel-item" href="#one!"><img src="img/1.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/2.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/3.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="img/4.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="img/5.jpg"></a>
+                <a class="carousel-item" href="#six!"><img src="img/6.jpg"></a>
+                <a class="carousel-item" href="#seven!"><img src="img/7.jpg"></a>
+                <a class="carousel-item" href="#eight!"><img src="img/8.jpg"></a>
+                <a class="carousel-item" href="#nine!"><img src="img/9.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>I am Psalm, the creator of this website.</p>
+                    <p>Here is my team</p>
+                    <a href="collection.html">The Team</a>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/seventeennews" class="red-text text-accent-2">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/saythename_17/following/" class="red-text text-accent-2">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@seventeen17_official?lang=en" class="red-text text-accent-2">Tiktok</a></li>
+                        <li><a href="https://www.youtube.com/@pledis17" class="red-text text-accent-2">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright red accent-3">
+            <div class="container center-align">&copy; 2024 THE8</div>
+        </div>
+    </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.materialboxed').materialbox();
+                $('.parallax').parallax();
+                $('.tabs').tabs();
+                $('.datepicker').datepicker({
+                    disableWeekends: true
+                });
+                $('.tooltipped').tooltip();
+                $('.scrollspy').scrollSpy();
+                $('.carousel').carousel();
+            });
+        </script>
+</body>
+</html>

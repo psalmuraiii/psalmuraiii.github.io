@@ -1,0 +1,322 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>THE8</title>
+
+    <style>
+        header {
+            background: url(img/mainpic.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .row .col {
+            margin-bottom: 20px;
+        }
+
+        .tabs .indicator{
+            background-color:  black;
+        }
+
+        .tabs .tab a:focus, .tabs .tab .a:focus.a:focus.active {
+            background: transparent;
+        }
+
+        .led-text {
+            min-width: 100%;
+            font-style: italic;
+            font-size: 20px;
+            animation: scroll-left 15s linear infinite, led-blink 4s step-start infinite, colorChange 2s infinite;
+        }
+
+        @keyframes led-blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes colorChange {
+            0% { color: rgb(255, 55, 149); }
+            50% { color: rgb(255, 97, 34); }
+            100% { color: rgb(248, 23, 68); }
+        }
+
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 20px;
+            }
+
+            .led-text {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">
+                    <div><img src="img/the8.png" alt="logo" style="height: 100%; max-height: 90px;"></div>
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons red-text text-accent-3">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="svt.html" class="red-text text-accent-3">SVT</a></li>
+                    <li><a href="gallery.html" class="red-text text-accent-3">Gallery</a></li>
+                    <li><a href="music.html" class="red-text text-accent-3">Music</a></li>
+                    <li><a href="#photo's" class="red-text text-accent-3">∞</a></li>
+                    <li><a href="#services" class="red-text text-accent-3">Mini</a></li>
+                    <li><a href="#contact" class="red-text text-accent-3">News</a></li>
+                </ul>
+                <ul class="sidenav red accent-3" id="mobile-menu">
+                    <li><a href="svt.html">SVT</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="#photo's">∞</a></li>
+                    <li><a href="#services">Mini</a></li>
+                    <li><a href="#contacts">News</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="headline" style="background-color: rgba(79, 3, 3, 0.327); overflow: hidden;">
+            <marquee behavior="scroll" direction="left" scrollamount="20" loop="infinite">
+                <span class="led-text">IT FEELS LIKE HEAVEN ON THE INSIDE SHE'S CALLING MY NAME, AND OH, IT SOUNDS NICE THE WAY THAT YOU'RE DANCING IN THE MOONLIGHT I THINK I'M FALLING IN LOVE WITH ALL THESE BIG SIGNS WELL, SHE SAID, "HOW YOU'RE FEELING? ARE YOU LOST AGAIN?" NO, WE DON'T NEED DIRECTIONS FROM YOU OR YOUR FRIENDS WE'RE SPEEDING THROUGH THE CITY 'CAUSE YOU'LL SEE THE END JUST TELL US WHERE TO GO AND WE'LL BE THERE IN TEN AND SHE WALKS DOWN I NOTICED HOW SHE DOES IT FOR REAL NOW AND SHE TALKS LOUD SHE'S TELLING ME WHAT I WANNA HEAR NOW IS IT REAL NOW? HOW DO I KNOW FOR SURE?</span>
+            </marquee>
+        </div>
+    </header>
+
+    <!-- photo / grid -->
+    <section class="grey darken-4">
+    <div class="container scrollspy" id="photo's">
+        <div class="row" style="padding-top:20px;">
+            <div class="col s4 l4">
+                <img src="img/laser1.jpg" alt="the8" class="z-depth-3 responsive-img materialboxed" style="border-radius: 30px;">
+            </div>
+            <a href="https://www.tiktok.com/@writershuji/photo/7354464593583901958?lang=en">
+            <div class="col s4 l4">
+                <img src="img/mainlaser.jpg" alt="the8" class="responsive-img hoverable circle" style="border: 3px solid rgba(220, 20, 60, 0.427);">
+            </div>
+            </a>
+            <div class="col s4 l4">
+                <img src="img/laser2.jpg" alt="the8" class="responsive-img materialboxed " style="border-radius: 30px;">
+            </div>
+            <div class="col s4 offset-s2 l4 offset-l2">
+                <img src="img/laser4.jpg" alt="the8" class="responsive-img materialboxed" style="border-radius: 30px;">
+            </div>
+            <div class="col s4 l4">
+                <img src="img/laser3.jpg" alt="the8" class="responsive-img materialboxed" style="border-radius: 30px;">
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div class="container">
+            <h2 class="center red accent-3 white-text accent-3" style="font-weight: 500;">XU MINGHAO</h2>
+            <div class="row"> 
+                <div class="col s12 l4">
+                    <p style="text-align: justify;">Xu Minghao, known professionally as The8, is a Chinese singer and dancer based in South Korea. He is a member of the South Korean boy band Seventeen and its subunit Performance Team. In 2019, he had his official solo debut and served as one of the two dance mentors in the Chinese survival show Youth With You. The8's role models are his parents. The8 always makes sure to eat his meals without skipping any. Even if he has to wake up at 3AM, he would wake up an hour earlier to eat. The8 is a member of the famous 97 liners squad along with Mingyu and DK who are also from Seventeen, Jungkook from BTS, BamBam and Yugyeom from Got7, Jaehyun from NCT, and Cha Eunwoo from Astro. The8, as a person who is creative and loves to paint, held his first art exhibit along with Mingyu during Seventeen's 3rd anniversary as a special surprise for Carats.The8 said he watched a lot of variety shows when he was in China and he wanted to be a superstar, so that’s why he became a singer in Korea.The8 avoids drinking cold water because of his weak stomach.  
+                        </p>
+                </div>
+                <div class="col s6 offset-s3 l4">
+                    <img src="img/minghao.png" alt="minghao" class="responsive-img">
+                </div>
+                <div class="col s12 l4">
+                    <h6><span style="font-weight: 900;">Name:</span><span class="red-text text-accent-3" style="font-weight: 600;"> Xu Minghao</span></h6>
+                    <h6><span style="font-weight: 900;">Native Name:</span><span class="red-text text-accent-3" style="font-weight: 500;"> 徐明浩</span></h6>
+                    <h6><span style="font-weight: 900;">Birthday:</span><span class="red-text text-accent-3" style="font-weight: 600;"> November 7, 1997</span></h6>
+                    <h6><span style="font-weight: 900;">Age:</span><span class="red-text text-accent-3" style="font-weight: 600;"> 27</span></h6>
+                    <h6><span style="font-weight: 900;">Height:</span><span class="red-text text-accent-3" style="font-weight: 600;"> 5'11" (180 cm)</span></h6>
+                    <h6><span style="font-weight: 900;">Weight:</span><span class="red-text text-accent-3" style="font-weight: 600;"> 127.9 lbs (58 kg)</span></h6>
+                    <h6><span style="font-weight: 900;">Group:</span><a href="svt.html" style="color: rgb(142, 92, 249); font-weight: bold;"> SEVENTEEN</a></h6>
+                    <h6><span style="font-weight: 900;">Unit:</span><span class="red-text text-accent-3" style="font-weight: 600;"> Performance Unit</span></h6>
+                    <h6><span style="font-weight: 900;">Company:</span><span class="red-text text-accent-3" style="font-weight: 600;"> Pledis Entertainment</span><br><span class="red-text text-accent-3" style="margin-left: 90px; font-weight: 600;">Hybe Labels</span></h6>
+                    <h6><span style="font-weight: 900;">Debut:</span><span class="red-text text-accent-3" style="font-weight: 600;"> May 26, 2015</span>
+                    <h6><span style="font-weight: 900;">Current State:</span><span class="red-text text-accent-3" style="font-weight: 600;"> Active</span>
+                    <h6><span style="font-weight: 900;">Zodiac Sign:</span><span class="red-text text-accent-3" style="font-weight: 600;"> Scorpio</span>
+                    <h6><span style="font-weight: 900;">MBTI:</span><span class="red-text text-accent-3" style="font-weight: 600;"> INTJ</span>
+                    <h6><span style="font-weight: 900;">Education:</span><span class="red-text text-accent-3" style="font-weight: 600; font-size: 16px"> Beijing International Art School</span>
+                    <h6><span style="font-weight: 900;">Language Spoken:</span><span class="red-text text-accent-3" style="font-weight: 600; font-size: 13.5px;"> Chinese, Korean & Japanese</span>
+                    <h6><span style="font-weight: 900;">Fandom:</span><span class="red-text text-accent-3" style="font-weight: 600;"> Carat</span>
+                </div>
+            </div> 
+    </div>
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/parallax1.png" alt="the8" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- services / tabs -->
+        <div class="container section scrollspy" id="services">
+            <div class="row">
+                <div class="col s12 l4">
+                    <blockquote><h2 class="red-text text-accent-3">Mini Seventeen!</h2></blockquote>
+                    <p>SEVENTEEN has revealed their official character series 'MINITEEN, which captures the essence of each member's personality.
+                    </p>
+
+                    <p>On September 28 and 29, SEVENTEEN released animated shorts and illustrations featuring 'MINITEEN (미니틴)' across their official social media platforms and YouTube.</p>
+
+                    <p>Pledis Entertainment commented, "Through these shorts and illustrations, we wanted to showcase SEVENTEEN's positive energy and the strong relationships between the members, which are also reflected in their upcoming album, 'SPILL THE FEELS. We hope fans look forward to this new release, which contains relatable stories that everyone can enjoy.</p>
+                </div>
+                <div class="col s12 l6 offset-l2 grey darken-4">
+                    <ul class="tabs">
+                        <li class="tab col s6">
+                            <a href="#characters" class="red accent-3 white-text">Characters</a>
+                        </li>
+                        <li class="tab col s6">
+                            <a href="#his" class="red accent-3 white-text">His</a>
+                        </li>
+                    </ul>
+                    <div class="col s12" id="characters">
+                        <p class="flow-text red-text text-accent-3">Miniteen</p>
+                        <p class="white-text">The characters, designed by the members themselves, perfectly reflect SEVENTEEN'S unique charm and individuality. Fans were excited to meet characters like Chocherry (S.Coups), Jjongtoram (Jeonghan), Shasumi (Joshua), Open/Close (Jun), Tamtam (Hoshi), Fireball (Wonwoo), Pimples (Woozi), Dipal (The8), Kimja (Mingyu), Doah (DK), Pugyul (Seungkwan). Nonver (Vernon), and Chandal, (Dino).</p>
+                        <div class="image-container">
+                                <img src="img/chars.png" alt="char" class="responsive-img">
+                        </div>
+                    </div>
+
+                    <div class="col s12" id="his">
+                        <p class="flow-text red-text text-accent-3">Dipal (디팔이)</p>
+                        <p class="white-text">the frog character from Miniteen, seems like a playful nod to Xu Minghao (The8) of SEVENTEEN. It might be inspired by Minghao's serene personality and his connection to nature, given his calm and introspective vibe, often likened to water or peaceful energy.</p>
+                        <div class="image-container">
+                            <img src="img/palranghae.png" alt="char" class="responsive-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/parallax2.png" alt="the8" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <section class="container section scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <blockquote><h2 class="red-text text-accent-3">Latest News</h2></blockquote>
+                <p>In a surprising turn of events, SEVENTEEN’s Xu Minghao, better known as THE8, is sparking dating rumors after fans speculated about his recent outings. The speculation began when a trusted insider claimed that Minghao has been spending time with someone outside of the entertainment industry.</p>
+                <p>The alleged partner, reportedly a talented and creative individual (yes, ME!), was spotted with Minghao at a private art gallery event. The two were seen discussing contemporary art pieces, sharing quiet laughs, and enjoying each other’s company over tea. Minghao’s love for the arts and meaningful connections makes this rumored relationship all the more believable.</p>
+                <p>Fans have been quick to react, with some noting Minghao’s glowing energy during recent appearances. Pledis Entertainment has yet to comment on the rumors, leaving Carats in a frenzy</p>
+                <p>Whether true or not, one thing is for certain—if Minghao has found someone who matches his artistic soul, we can’t help but wish him happiness. Stay tuned for updates!</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">date_range</i>
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Choose a date u need for me...</label>
+                </div>
+                <div class="input-field">
+                    <p>Services required...</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Photocards</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Album</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field">
+                    <button class="btn red accent-3">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <audio autoplay>
+        <source src="img/Paradise.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- footer -->
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>I am Psalm, the creator of this website.</p>
+                    <p>Here is my team</p>
+                    <a href="collection.html">The Team</a>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/seventeennews" class="red-text text-accent-2">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/saythename_17/following/" class="red-text text-accent-2">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@seventeen17_official?lang=en" class="red-text text-accent-2">Tiktok</a></li>
+                        <li><a href="https://www.youtube.com/@pledis17" class="red-text text-accent-2">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright red accent-3">
+            <div class="container center-align">&copy; 2024 THE8</div>
+        </div>
+    </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.materialboxed').materialbox();
+                $('.parallax').parallax();
+                $('.tabs').tabs();
+                $('.datepicker').datepicker({
+                    disableWeekends: true
+                });
+                $('.tooltipped').tooltip();
+                $('.scrollspy').scrollSpy();
+            });
+        </script>
+</body>
+</html>
